@@ -1,0 +1,198 @@
+body {
+    font-family: 'Fira Sans';
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Imagen de inicio */
+.imginicio {
+    width: 60%;
+    height: auto;
+    margin-left: 20%;
+    max-width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #008ee0;
+    font-size: 30px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Logo del equipo */
+.logo-equipo img {
+    width: 150px;
+    transition: transform 0.3s ease;
+}
+
+.logo-equipo img:hover {
+    transform: scale(1.1);
+}
+
+/* Navegación */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #2ba4f0;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: black;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Título principal */
+h1 {
+    color: #00796b;
+    margin-bottom: 40px;
+}
+
+/* Perfiles */
+.profiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Estilo de cada perfil */
+.profile {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 18%;
+    min-width: 200px; /* Tamaño mínimo para que se ajusten mejor en pantallas pequeñas */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1%;
+    margin-bottom: 20px;
+}
+
+/* Círculo de perfil */
+.circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 20px auto;
+    background-color: #b2ebf2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle img {
+    width: 100%;
+    height: auto;
+}
+
+/* Descripción de perfil */
+.description {
+    padding: 10px 15px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.description h2 {
+    margin: 10px 0;
+    color: #004d40;
+}
+
+.description p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Sección de Miss */
+.caja {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Imagen lateral */
+.imagen-lateral img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin: 40px auto;
+}
+
+/* Texto de Miss Cinthia */
+.miss-cinthia {
+    flex: 1;
+    max-width: 600px; /* Limita el tamaño del texto */
+}
+
+.miss-cinthia h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.miss-cinthia p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+    .profiles {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .imginicio {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .caja {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .imagen-lateral img {
+        margin: 0 auto 20px;
+    }
+}
